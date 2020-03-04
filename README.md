@@ -1,4 +1,4 @@
-# ATCart-simple-path
+## ATCart-simple-path
 This is a simple path tracking of ATCart by using Intel Realsense T265 tracking module.
 
 ![](images/ugv.JPEG)
@@ -15,7 +15,7 @@ If you think everything is set up properly you can firstly try `testOdometry.py`
 # Run
 You can run `recvQtyPlot__.py` on your base station PC first, then it will pop up the window as this one.
 
-![](image/plot.png)
+![](images/plot.png)
 
 After that you need to run the autopilot script on the robot PC by ssh from your PC. If you are using Futaba transmitter, we need to switch ch5. to auto mode (blue LED on the MOAB board). This [video](https://www.youtube.com/watch?v=WnMXmoMtPBk&t=1s) is the result if everything is running without problem. In this case, I was running `goSquare.py` on the robot side, and `recvQtPlotSquare.py` on my laptop. You can try adjust the distance by changing `dist = 3.0` variable on line70 of `goSquare.py`, but please keep in mind that on your visualization screen you need to change that variable also on line26 of `goSquare.py`, this should be same value. Similar with `goRectangle.py` and `recvQtPlotRect.py`, you can adjust the short and long distance on line70 and 71 of `goSquare.py` and line26 and 27 on `recvQtPlotRect.py`. 
 
